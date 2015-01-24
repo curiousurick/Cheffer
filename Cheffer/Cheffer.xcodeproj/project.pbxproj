@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E4E10A31A741EAD0029C5D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */; };
+		5E4E10A51A741EAD0029C5D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */; };
+		5E4E10A71A741EAD0029C5D8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */; };
+		5E4E10AA1A741EAD0029C5D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10A81A741EAD0029C5D8 /* Main.storyboard */; };
+		5E4E10AC1A741EAE0029C5D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */; };
+		5E4E10AF1A741EAE0029C5D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10AD1A741EAE0029C5D8 /* LaunchScreen.xib */; };
+		5E4E10BB1A741EAE0029C5D8 /* ChefferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10BA1A741EAE0029C5D8 /* ChefferTests.swift */; };
+		5E4E10C51A741F040029C5D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10C41A741F040029C5D8 /* LoginViewController.swift */; };
+		5E4E10C71A741F290029C5D8 /* Cheffer no back, house.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10C61A741F290029C5D8 /* Cheffer no back, house.png */; };
+		5E4E10CD1A742F050029C5D8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10C81A742F050029C5D8 /* Bolts.framework */; };
+		5E4E10CE1A742F050029C5D8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10C91A742F050029C5D8 /* Parse.framework */; };
+		5E4E10CF1A742F050029C5D8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10CA1A742F050029C5D8 /* ParseCrashReporting.framework */; };
+		5E4E10D01A742F050029C5D8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10CB1A742F050029C5D8 /* ParseFacebookUtils.framework */; };
+		5E4E10D11A742F050029C5D8 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10CC1A742F050029C5D8 /* ParseUI.framework */; };
+		5E4E10D31A742FA20029C5D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10D21A742FA20029C5D8 /* AudioToolbox.framework */; };
+		5E4E10D51A742FA70029C5D8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10D41A742FA70029C5D8 /* CFNetwork.framework */; };
+		5E4E10D71A742FB50029C5D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10D61A742FB50029C5D8 /* CoreGraphics.framework */; };
+		5E4E10D91A742FBC0029C5D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10D81A742FBC0029C5D8 /* CoreLocation.framework */; };
+		5E4E10E11A742FFF0029C5D8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DA1A742FFF0029C5D8 /* libsqlite3.dylib */; };
+		5E4E10E21A742FFF0029C5D8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DB1A742FFF0029C5D8 /* libz.dylib */; };
+		5E4E10E31A742FFF0029C5D8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DC1A742FFF0029C5D8 /* MobileCoreServices.framework */; };
+		5E4E10E41A742FFF0029C5D8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DD1A742FFF0029C5D8 /* QuartzCore.framework */; };
+		5E4E10E51A742FFF0029C5D8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DE1A742FFF0029C5D8 /* Security.framework */; };
+		5E4E10E61A742FFF0029C5D8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10DF1A742FFF0029C5D8 /* StoreKit.framework */; };
+		5E4E10E71A742FFF0029C5D8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10E01A742FFF0029C5D8 /* SystemConfiguration.framework */; };
+		5E4E10E91A7443440029C5D8 /* PostMyMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10E81A7443440029C5D8 /* PostMyMealViewController.swift */; };
+		5E4E10EB1A7452B60029C5D8 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */; };
+		5E4E10ED1A7454310029C5D8 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */; };
+		5E4E10EF1A7455480029C5D8 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EE1A7455480029C5D8 /* Meal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E4E10B51A741EAE0029C5D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4E10951A741EAD0029C5D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E4E109C1A741EAD0029C5D8;
+			remoteInfo = Cheffer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E4E109D1A741EAD0029C5D8 /* Cheffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4E10A11A741EAD0029C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5E4E10A91A741EAD0029C5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E4E10AE1A741EAE0029C5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5E4E10B41A741EAE0029C5D8 /* ChefferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChefferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4E10B91A741EAE0029C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4E10BA1A741EAE0029C5D8 /* ChefferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefferTests.swift; sourceTree = "<group>"; };
+		5E4E10C41A741F040029C5D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E4E10C61A741F290029C5D8 /* Cheffer no back, house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cheffer no back, house.png"; sourceTree = "<group>"; };
+		5E4E10C81A742F050029C5D8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Downloads/parse-library-1.6.2/Bolts.framework"; sourceTree = "<group>"; };
+		5E4E10C91A742F050029C5D8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.2/Parse.framework"; sourceTree = "<group>"; };
+		5E4E10CA1A742F050029C5D8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../../Downloads/parse-library-1.6.2/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		5E4E10CB1A742F050029C5D8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../Downloads/parse-library-1.6.2/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		5E4E10CC1A742F050029C5D8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Downloads/parse-library-1.6.2/ParseUI.framework"; sourceTree = "<group>"; };
+		5E4E10D21A742FA20029C5D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5E4E10D41A742FA70029C5D8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5E4E10D61A742FB50029C5D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E4E10D81A742FBC0029C5D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5E4E10DA1A742FFF0029C5D8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5E4E10DB1A742FFF0029C5D8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5E4E10DC1A742FFF0029C5D8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5E4E10DD1A742FFF0029C5D8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E4E10DE1A742FFF0029C5D8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5E4E10DF1A742FFF0029C5D8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5E4E10E01A742FFF0029C5D8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5E4E10E81A7443440029C5D8 /* PostMyMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMyMealViewController.swift; sourceTree = "<group>"; };
+		5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		5E4E10EE1A7455480029C5D8 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4E109A1A741EAD0029C5D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4E10E11A742FFF0029C5D8 /* libsqlite3.dylib in Frameworks */,
+				5E4E10E21A742FFF0029C5D8 /* libz.dylib in Frameworks */,
+				5E4E10E31A742FFF0029C5D8 /* MobileCoreServices.framework in Frameworks */,
+				5E4E10E41A742FFF0029C5D8 /* QuartzCore.framework in Frameworks */,
+				5E4E10E51A742FFF0029C5D8 /* Security.framework in Frameworks */,
+				5E4E10E61A742FFF0029C5D8 /* StoreKit.framework in Frameworks */,
+				5E4E10E71A742FFF0029C5D8 /* SystemConfiguration.framework in Frameworks */,
+				5E4E10D91A742FBC0029C5D8 /* CoreLocation.framework in Frameworks */,
+				5E4E10D71A742FB50029C5D8 /* CoreGraphics.framework in Frameworks */,
+				5E4E10D51A742FA70029C5D8 /* CFNetwork.framework in Frameworks */,
+				5E4E10D31A742FA20029C5D8 /* AudioToolbox.framework in Frameworks */,
+				5E4E10CD1A742F050029C5D8 /* Bolts.framework in Frameworks */,
+				5E4E10CE1A742F050029C5D8 /* Parse.framework in Frameworks */,
+				5E4E10CF1A742F050029C5D8 /* ParseCrashReporting.framework in Frameworks */,
+				5E4E10D01A742F050029C5D8 /* ParseFacebookUtils.framework in Frameworks */,
+				5E4E10D11A742F050029C5D8 /* ParseUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4E10B11A741EAE0029C5D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4E10941A741EAD0029C5D8 = {
+			isa = PBXGroup;
+			children = (
+				5E4E10DA1A742FFF0029C5D8 /* libsqlite3.dylib */,
+				5E4E10DB1A742FFF0029C5D8 /* libz.dylib */,
+				5E4E10DC1A742FFF0029C5D8 /* MobileCoreServices.framework */,
+				5E4E10DD1A742FFF0029C5D8 /* QuartzCore.framework */,
+				5E4E10DE1A742FFF0029C5D8 /* Security.framework */,
+				5E4E10DF1A742FFF0029C5D8 /* StoreKit.framework */,
+				5E4E10E01A742FFF0029C5D8 /* SystemConfiguration.framework */,
+				5E4E10D81A742FBC0029C5D8 /* CoreLocation.framework */,
+				5E4E10D61A742FB50029C5D8 /* CoreGraphics.framework */,
+				5E4E10D41A742FA70029C5D8 /* CFNetwork.framework */,
+				5E4E10D21A742FA20029C5D8 /* AudioToolbox.framework */,
+				5E4E10C81A742F050029C5D8 /* Bolts.framework */,
+				5E4E10C91A742F050029C5D8 /* Parse.framework */,
+				5E4E10CA1A742F050029C5D8 /* ParseCrashReporting.framework */,
+				5E4E10CB1A742F050029C5D8 /* ParseFacebookUtils.framework */,
+				5E4E10CC1A742F050029C5D8 /* ParseUI.framework */,
+				5E4E109F1A741EAD0029C5D8 /* Cheffer */,
+				5E4E10B71A741EAE0029C5D8 /* ChefferTests */,
+				5E4E109E1A741EAD0029C5D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4E109E1A741EAD0029C5D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E109D1A741EAD0029C5D8 /* Cheffer.app */,
+				5E4E10B41A741EAE0029C5D8 /* ChefferTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4E109F1A741EAD0029C5D8 /* Cheffer */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */,
+				5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */,
+				5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */,
+				5E4E10C41A741F040029C5D8 /* LoginViewController.swift */,
+				5E4E10A81A741EAD0029C5D8 /* Main.storyboard */,
+				5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */,
+				5E4E10AD1A741EAE0029C5D8 /* LaunchScreen.xib */,
+				5E4E10A01A741EAD0029C5D8 /* Supporting Files */,
+				5E4E10E81A7443440029C5D8 /* PostMyMealViewController.swift */,
+				5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */,
+				5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */,
+				5E4E10EE1A7455480029C5D8 /* Meal.swift */,
+			);
+			path = Cheffer;
+			sourceTree = "<group>";
+		};
+		5E4E10A01A741EAD0029C5D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10C61A741F290029C5D8 /* Cheffer no back, house.png */,
+				5E4E10A11A741EAD0029C5D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E4E10B71A741EAE0029C5D8 /* ChefferTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10BA1A741EAE0029C5D8 /* ChefferTests.swift */,
+				5E4E10B81A741EAE0029C5D8 /* Supporting Files */,
+			);
+			path = ChefferTests;
+			sourceTree = "<group>";
+		};
+		5E4E10B81A741EAE0029C5D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10B91A741EAE0029C5D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4E109C1A741EAD0029C5D8 /* Cheffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4E10BE1A741EAE0029C5D8 /* Build configuration list for PBXNativeTarget "Cheffer" */;
+			buildPhases = (
+				5E4E10991A741EAD0029C5D8 /* Sources */,
+				5E4E109A1A741EAD0029C5D8 /* Frameworks */,
+				5E4E109B1A741EAD0029C5D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheffer;
+			productName = Cheffer;
+			productReference = 5E4E109D1A741EAD0029C5D8 /* Cheffer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E4E10B31A741EAE0029C5D8 /* ChefferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4E10C11A741EAE0029C5D8 /* Build configuration list for PBXNativeTarget "ChefferTests" */;
+			buildPhases = (
+				5E4E10B01A741EAE0029C5D8 /* Sources */,
+				5E4E10B11A741EAE0029C5D8 /* Frameworks */,
+				5E4E10B21A741EAE0029C5D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4E10B61A741EAE0029C5D8 /* PBXTargetDependency */,
+			);
+			name = ChefferTests;
+			productName = ChefferTests;
+			productReference = 5E4E10B41A741EAE0029C5D8 /* ChefferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4E10951A741EAD0029C5D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ChefferCo;
+				TargetAttributes = {
+					5E4E109C1A741EAD0029C5D8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5E4E10B31A741EAE0029C5D8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5E4E109C1A741EAD0029C5D8;
+					};
+				};
+			};
+			buildConfigurationList = 5E4E10981A741EAD0029C5D8 /* Build configuration list for PBXProject "Cheffer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4E10941A741EAD0029C5D8;
+			productRefGroup = 5E4E109E1A741EAD0029C5D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4E109C1A741EAD0029C5D8 /* Cheffer */,
+				5E4E10B31A741EAE0029C5D8 /* ChefferTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4E109B1A741EAD0029C5D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4E10AA1A741EAD0029C5D8 /* Main.storyboard in Resources */,
+				5E4E10AF1A741EAE0029C5D8 /* LaunchScreen.xib in Resources */,
+				5E4E10C71A741F290029C5D8 /* Cheffer no back, house.png in Resources */,
+				5E4E10AC1A741EAE0029C5D8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4E10B21A741EAE0029C5D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4E10991A741EAD0029C5D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4E10C51A741F040029C5D8 /* LoginViewController.swift in Sources */,
+				5E4E10EB1A7452B60029C5D8 /* MealsViewController.swift in Sources */,
+				5E4E10E91A7443440029C5D8 /* PostMyMealViewController.swift in Sources */,
+				5E4E10A71A741EAD0029C5D8 /* SecondViewController.swift in Sources */,
+				5E4E10A31A741EAD0029C5D8 /* AppDelegate.swift in Sources */,
+				5E4E10EF1A7455480029C5D8 /* Meal.swift in Sources */,
+				5E4E10A51A741EAD0029C5D8 /* FirstViewController.swift in Sources */,
+				5E4E10ED1A7454310029C5D8 /* MealViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4E10B01A741EAE0029C5D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4E10BB1A741EAE0029C5D8 /* ChefferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E4E10B61A741EAE0029C5D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E4E109C1A741EAD0029C5D8 /* Cheffer */;
+			targetProxy = 5E4E10B51A741EAE0029C5D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E4E10A81A741EAD0029C5D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4E10A91A741EAD0029C5D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E4E10AD1A741EAE0029C5D8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4E10AE1A741EAE0029C5D8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4E10BC1A741EAE0029C5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E4E10BD1A741EAE0029C5D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4E10BF1A741EAE0029C5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/George/Downloads/parse-library-1.6.2",
+				);
+				INFOPLIST_FILE = Cheffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E4E10C01A741EAE0029C5D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/George/Downloads/parse-library-1.6.2",
+				);
+				INFOPLIST_FILE = Cheffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E4E10C21A741EAE0029C5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChefferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheffer.app/Cheffer";
+			};
+			name = Debug;
+		};
+		5E4E10C31A741EAE0029C5D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChefferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheffer.app/Cheffer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4E10981A741EAD0029C5D8 /* Build configuration list for PBXProject "Cheffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4E10BC1A741EAE0029C5D8 /* Debug */,
+				5E4E10BD1A741EAE0029C5D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4E10BE1A741EAE0029C5D8 /* Build configuration list for PBXNativeTarget "Cheffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4E10BF1A741EAE0029C5D8 /* Debug */,
+				5E4E10C01A741EAE0029C5D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4E10C11A741EAE0029C5D8 /* Build configuration list for PBXNativeTarget "ChefferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4E10C21A741EAE0029C5D8 /* Debug */,
+				5E4E10C31A741EAE0029C5D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4E10951A741EAD0029C5D8 /* Project object */;
+}
