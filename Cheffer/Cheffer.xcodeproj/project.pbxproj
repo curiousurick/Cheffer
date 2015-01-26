@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E4E10A31A741EAD0029C5D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */; };
-		5E4E10A51A741EAD0029C5D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */; };
-		5E4E10A71A741EAD0029C5D8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */; };
 		5E4E10AA1A741EAD0029C5D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10A81A741EAD0029C5D8 /* Main.storyboard */; };
 		5E4E10AC1A741EAE0029C5D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */; };
 		5E4E10AF1A741EAE0029C5D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E10AD1A741EAE0029C5D8 /* LaunchScreen.xib */; };
@@ -36,6 +34,20 @@
 		5E4E10EB1A7452B60029C5D8 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */; };
 		5E4E10ED1A7454310029C5D8 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */; };
 		5E4E10EF1A7455480029C5D8 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10EE1A7455480029C5D8 /* Meal.swift */; };
+		5E4E10F31A74663F0029C5D8 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10F21A74663F0029C5D8 /* MealDetailViewController.swift */; };
+		5E4E10F51A7474D40029C5D8 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10F41A7474D40029C5D8 /* Chef.swift */; };
+		5E4E10F71A7475A80029C5D8 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10F61A7475A80029C5D8 /* Recipe.swift */; };
+		5E4E10F91A7475DD0029C5D8 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10F81A7475DD0029C5D8 /* Ingredient.swift */; };
+		5E4E10FD1A74C0D20029C5D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E10FC1A74C0D20029C5D8 /* MapKit.framework */; };
+		5E4E10FF1A74C12E0029C5D8 /* MealsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E10FE1A74C12E0029C5D8 /* MealsMapViewController.swift */; };
+		5ECDEA9B1A75758D00555F4B /* Healthy-Kitchen-Tips-Know-When-Cooking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEA9A1A75758D00555F4B /* Healthy-Kitchen-Tips-Know-When-Cooking.jpg */; };
+		5ECDEA9F1A75891300555F4B /* separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEA9E1A75891300555F4B /* separator.png */; };
+		5ECDEAA11A7593EF00555F4B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDEAA01A7593EF00555F4B /* SignupViewController.swift */; };
+		5ECDEAA31A75992600555F4B /* bento.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEAA21A75992600555F4B /* bento.jpg */; };
+		5ECDEAA51A75A0B000555F4B /* food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEAA41A75A0B000555F4B /* food.jpg */; };
+		5ECDEAA71A75AF4500555F4B /* Profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEAA61A75AF4500555F4B /* Profile.jpg */; };
+		5ECDEAB31A75B82D00555F4B /* foodIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEAB21A75B82D00555F4B /* foodIcon.png */; };
+		5ECDEAB51A75BA2500555F4B /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDEAB41A75BA2500555F4B /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +64,6 @@
 		5E4E109D1A741EAD0029C5D8 /* Cheffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4E10A11A741EAD0029C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5E4E10A91A741EAD0029C5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E4E10AE1A741EAE0029C5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -82,6 +92,20 @@
 		5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
 		5E4E10EE1A7455480029C5D8 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		5E4E10F21A74663F0029C5D8 /* MealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		5E4E10F41A7474D40029C5D8 /* Chef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		5E4E10F61A7475A80029C5D8 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		5E4E10F81A7475DD0029C5D8 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		5E4E10FC1A74C0D20029C5D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5E4E10FE1A74C12E0029C5D8 /* MealsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsMapViewController.swift; sourceTree = "<group>"; };
+		5ECDEA9A1A75758D00555F4B /* Healthy-Kitchen-Tips-Know-When-Cooking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Healthy-Kitchen-Tips-Know-When-Cooking.jpg"; sourceTree = "<group>"; };
+		5ECDEA9E1A75891300555F4B /* separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separator.png; sourceTree = "<group>"; };
+		5ECDEAA01A7593EF00555F4B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		5ECDEAA21A75992600555F4B /* bento.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bento.jpg; sourceTree = "<group>"; };
+		5ECDEAA41A75A0B000555F4B /* food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.jpg; sourceTree = "<group>"; };
+		5ECDEAA61A75AF4500555F4B /* Profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Profile.jpg; sourceTree = "<group>"; };
+		5ECDEAB21A75B82D00555F4B /* foodIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodIcon.png; sourceTree = "<group>"; };
+		5ECDEAB41A75BA2500555F4B /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4E10FD1A74C0D20029C5D8 /* MapKit.framework in Frameworks */,
 				5E4E10E11A742FFF0029C5D8 /* libsqlite3.dylib in Frameworks */,
 				5E4E10E21A742FFF0029C5D8 /* libz.dylib in Frameworks */,
 				5E4E10E31A742FFF0029C5D8 /* MobileCoreServices.framework in Frameworks */,
@@ -121,22 +146,7 @@
 		5E4E10941A741EAD0029C5D8 = {
 			isa = PBXGroup;
 			children = (
-				5E4E10DA1A742FFF0029C5D8 /* libsqlite3.dylib */,
-				5E4E10DB1A742FFF0029C5D8 /* libz.dylib */,
-				5E4E10DC1A742FFF0029C5D8 /* MobileCoreServices.framework */,
-				5E4E10DD1A742FFF0029C5D8 /* QuartzCore.framework */,
-				5E4E10DE1A742FFF0029C5D8 /* Security.framework */,
-				5E4E10DF1A742FFF0029C5D8 /* StoreKit.framework */,
-				5E4E10E01A742FFF0029C5D8 /* SystemConfiguration.framework */,
-				5E4E10D81A742FBC0029C5D8 /* CoreLocation.framework */,
-				5E4E10D61A742FB50029C5D8 /* CoreGraphics.framework */,
-				5E4E10D41A742FA70029C5D8 /* CFNetwork.framework */,
-				5E4E10D21A742FA20029C5D8 /* AudioToolbox.framework */,
-				5E4E10C81A742F050029C5D8 /* Bolts.framework */,
-				5E4E10C91A742F050029C5D8 /* Parse.framework */,
-				5E4E10CA1A742F050029C5D8 /* ParseCrashReporting.framework */,
-				5E4E10CB1A742F050029C5D8 /* ParseFacebookUtils.framework */,
-				5E4E10CC1A742F050029C5D8 /* ParseUI.framework */,
+				5E4E10F01A7466020029C5D8 /* Frameworks */,
 				5E4E109F1A741EAD0029C5D8 /* Cheffer */,
 				5E4E10B71A741EAE0029C5D8 /* ChefferTests */,
 				5E4E109E1A741EAD0029C5D8 /* Products */,
@@ -156,17 +166,20 @@
 			isa = PBXGroup;
 			children = (
 				5E4E10A21A741EAD0029C5D8 /* AppDelegate.swift */,
-				5E4E10A41A741EAD0029C5D8 /* FirstViewController.swift */,
-				5E4E10A61A741EAD0029C5D8 /* SecondViewController.swift */,
-				5E4E10C41A741F040029C5D8 /* LoginViewController.swift */,
+				5E4E10F11A7466190029C5D8 /* View Controllers */,
 				5E4E10A81A741EAD0029C5D8 /* Main.storyboard */,
+				5ECDEAB21A75B82D00555F4B /* foodIcon.png */,
+				5ECDEAA01A7593EF00555F4B /* SignupViewController.swift */,
+				5ECDEA9A1A75758D00555F4B /* Healthy-Kitchen-Tips-Know-When-Cooking.jpg */,
 				5E4E10AB1A741EAE0029C5D8 /* Images.xcassets */,
+				5ECDEA9E1A75891300555F4B /* separator.png */,
 				5E4E10AD1A741EAE0029C5D8 /* LaunchScreen.xib */,
 				5E4E10A01A741EAD0029C5D8 /* Supporting Files */,
-				5E4E10E81A7443440029C5D8 /* PostMyMealViewController.swift */,
-				5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */,
 				5E4E10EC1A7454310029C5D8 /* MealViewCell.swift */,
 				5E4E10EE1A7455480029C5D8 /* Meal.swift */,
+				5E4E10F41A7474D40029C5D8 /* Chef.swift */,
+				5E4E10F61A7475A80029C5D8 /* Recipe.swift */,
+				5E4E10F81A7475DD0029C5D8 /* Ingredient.swift */,
 			);
 			path = Cheffer;
 			sourceTree = "<group>";
@@ -195,6 +208,46 @@
 				5E4E10B91A741EAE0029C5D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E4E10F01A7466020029C5D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10FC1A74C0D20029C5D8 /* MapKit.framework */,
+				5E4E10DA1A742FFF0029C5D8 /* libsqlite3.dylib */,
+				5E4E10DB1A742FFF0029C5D8 /* libz.dylib */,
+				5E4E10DC1A742FFF0029C5D8 /* MobileCoreServices.framework */,
+				5E4E10DD1A742FFF0029C5D8 /* QuartzCore.framework */,
+				5E4E10DE1A742FFF0029C5D8 /* Security.framework */,
+				5E4E10DF1A742FFF0029C5D8 /* StoreKit.framework */,
+				5E4E10E01A742FFF0029C5D8 /* SystemConfiguration.framework */,
+				5E4E10D81A742FBC0029C5D8 /* CoreLocation.framework */,
+				5E4E10D61A742FB50029C5D8 /* CoreGraphics.framework */,
+				5E4E10D41A742FA70029C5D8 /* CFNetwork.framework */,
+				5E4E10D21A742FA20029C5D8 /* AudioToolbox.framework */,
+				5E4E10C81A742F050029C5D8 /* Bolts.framework */,
+				5E4E10C91A742F050029C5D8 /* Parse.framework */,
+				5E4E10CA1A742F050029C5D8 /* ParseCrashReporting.framework */,
+				5E4E10CB1A742F050029C5D8 /* ParseFacebookUtils.framework */,
+				5E4E10CC1A742F050029C5D8 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E4E10F11A7466190029C5D8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E10C41A741F040029C5D8 /* LoginViewController.swift */,
+				5E4E10E81A7443440029C5D8 /* PostMyMealViewController.swift */,
+				5E4E10EA1A7452B60029C5D8 /* MealsViewController.swift */,
+				5E4E10F21A74663F0029C5D8 /* MealDetailViewController.swift */,
+				5E4E10FE1A74C12E0029C5D8 /* MealsMapViewController.swift */,
+				5ECDEAA21A75992600555F4B /* bento.jpg */,
+				5ECDEAA41A75A0B000555F4B /* food.jpg */,
+				5ECDEAA61A75AF4500555F4B /* Profile.jpg */,
+				5ECDEAB41A75BA2500555F4B /* map.png */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +330,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECDEAA71A75AF4500555F4B /* Profile.jpg in Resources */,
 				5E4E10AA1A741EAD0029C5D8 /* Main.storyboard in Resources */,
 				5E4E10AF1A741EAE0029C5D8 /* LaunchScreen.xib in Resources */,
 				5E4E10C71A741F290029C5D8 /* Cheffer no back, house.png in Resources */,
+				5ECDEAA51A75A0B000555F4B /* food.jpg in Resources */,
+				5ECDEAB51A75BA2500555F4B /* map.png in Resources */,
+				5ECDEA9F1A75891300555F4B /* separator.png in Resources */,
+				5ECDEA9B1A75758D00555F4B /* Healthy-Kitchen-Tips-Know-When-Cooking.jpg in Resources */,
 				5E4E10AC1A741EAE0029C5D8 /* Images.xcassets in Resources */,
+				5ECDEAB31A75B82D00555F4B /* foodIcon.png in Resources */,
+				5ECDEAA31A75992600555F4B /* bento.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +360,16 @@
 			files = (
 				5E4E10C51A741F040029C5D8 /* LoginViewController.swift in Sources */,
 				5E4E10EB1A7452B60029C5D8 /* MealsViewController.swift in Sources */,
+				5E4E10F31A74663F0029C5D8 /* MealDetailViewController.swift in Sources */,
 				5E4E10E91A7443440029C5D8 /* PostMyMealViewController.swift in Sources */,
-				5E4E10A71A741EAD0029C5D8 /* SecondViewController.swift in Sources */,
+				5E4E10F51A7474D40029C5D8 /* Chef.swift in Sources */,
+				5E4E10FF1A74C12E0029C5D8 /* MealsMapViewController.swift in Sources */,
 				5E4E10A31A741EAD0029C5D8 /* AppDelegate.swift in Sources */,
+				5ECDEAA11A7593EF00555F4B /* SignupViewController.swift in Sources */,
 				5E4E10EF1A7455480029C5D8 /* Meal.swift in Sources */,
-				5E4E10A51A741EAD0029C5D8 /* FirstViewController.swift in Sources */,
+				5E4E10F91A7475DD0029C5D8 /* Ingredient.swift in Sources */,
 				5E4E10ED1A7454310029C5D8 /* MealViewCell.swift in Sources */,
+				5E4E10F71A7475A80029C5D8 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +499,7 @@
 				INFOPLIST_FILE = Cheffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +514,7 @@
 				INFOPLIST_FILE = Cheffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

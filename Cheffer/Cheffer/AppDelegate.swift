@@ -23,17 +23,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://parse.com/docs/ios_guide#localdatastore/iOS
         Parse.enableLocalDatastore()
         
+        
         // Initialize Parse.
         Parse.setApplicationId("stMIBOXrOcX3gCpUyMuvdeOvjWmoCz17Umu0LhCl", clientKey: "mxBYq0DSwbLKOTq05y9tvQmLV4hZen7UlTeTC6NS")
+        
+        var inputChef = Chef(firstName: "George", lastName: "Urick", firstLine: "1234 33rd Ave NE", secondLine: "Apt B415", city: "Seattle", state: "WA", zip: 98125, phoneNumber: 4257572278)
+        var chef = PFObject(className: "Chef")
+        chef["firstName"] = inputChef.firstName
+        chef["lastName"] = inputChef.lastName
+        chef["firstLine"] = inputChef.firstLine
+        chef["secondLine"] = inputChef.secondLine
+        chef["city"] = inputChef.city
+        chef["state"] = inputChef.state
+        chef["zip"] = inputChef.zip
+        chef["phoneNumber"] = inputChef.phoneNumber
+        
+        
+        
         var meal = PFObject(className: "Meal")
-        //var recipe = PFObject(className: "Recipe")
-        //var ingredient = PFObject(className: "Ingredient")
         meal["cuisine"] = "Indian"
-        var orderDate = NSDate()
-        var ReadyDate = NSDate()
-        meal["OrderDateTime"] = orderDate
-        meal["ReadyDateTime"] = ReadyDate
-        //meal.save()
+        meal["name"] = "Naan"
+        
+        meal["readyTime"] = NSDate()
+        meal["pickupTime"] = NSDate()
+        meal["orderByTime"] = NSDate()
+        var price = 1.0
+        
+        meal["price"] = price
+        var availableMeals = 3
+        meal["availableMeals"] = availableMeals
+        meal["chef"] = chef
+      //  meal.save()
         
         // [Optional] Track statistics around application opens.
         return true

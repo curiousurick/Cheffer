@@ -9,15 +9,18 @@
 import UIKit
 import Parse
 
-class MealsViewController: UITableViewController {
+class MealsViewController: UITableViewController, UITableViewDelegate {
     
     var meals:[Meal] = []
+   
     
+    @IBAction func PostButtonClicked(sender: AnyObject) {
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 242/255, green: 121/255, blue: 129/255, alpha: 1)]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -25,8 +28,9 @@ class MealsViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
-        var query = PFQuery(className:"Meal")
-        query.whereKey("cuisine", equalTo:"Indian")
+        var query = PFQuery(className:"Meals3")
+       // query.whereKey("cuisine", equalTo:"Indian")
+        query.includeKey("chef")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -37,8 +41,28 @@ class MealsViewController: UITableViewController {
                 //self.meals = objects
                 
                 for object in objects {
-                    var label = object["cuisine"] as NSString
-                    var meal = Meal(label: label)
+                    var name = object["name"] as String
+                    var cuisine = object["cuisine"] as String
+                    var chefObject = object["chef"] as PFObject
+                    
+                    var readyTime = object["readyTime"] as NSDate
+                    var pickupTime = object["pickupTime"] as NSDate
+                    var orderByTime = object["orderByTime"] as NSDate
+                    
+                    var price = object["price"] as NSNumber
+                    var availableMeals = object["availableMeals"] as Int
+                    
+                    var firstName = chefObject["firstName"] as String
+                    var lastName = chefObject["lastName"] as String
+                    var firstLine = chefObject["firstLine"] as String
+                    var secondLine = chefObject["secondLine"] as String
+                    var city = chefObject["city"] as String
+                    var state = chefObject["state"] as String
+                    var zip = chefObject["zip"] as Int
+                    var phoneNumber = chefObject["phoneNumber"] as Int
+                    var chef = Chef(firstName: firstName, lastName: lastName, firstLine: firstLine, secondLine: secondLine, city: city, state: state, zip: zip, phoneNumber: phoneNumber)
+                    
+                    var meal = Meal(cuisine: cuisine, name: name, chef: chef, readyTime: readyTime, pickupTime: pickupTime, orderByTime: orderByTime, price: price, availableMeals: availableMeals)
                     self.meals.append(meal)
                 
                     NSLog("%@", object.objectId)
@@ -75,7 +99,16 @@ class MealsViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("meal", forIndexPath: indexPath) as MealViewCell
         var meal = self.meals[indexPath.row]
-        cell.setMeal(meal)
+        
+        
+
+        let thumbImage = UIImage(named: "food.jpg")
+        cell.label!.text = meal.name
+        cell.thumb!.image = thumbImage
+        cell.subtitle!.text = meal.cuisine
+        
+       // cell.thumbnailImageView.image = UIImage(thumb)
+
         
 
         return cell
@@ -108,7 +141,13 @@ class MealsViewController: UITableViewController {
 
     }
     */
+    
+    @IBAction func unwindToSegue (segue : UIStoryboardSegue) {}
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //performSegueWithIdentifier("Show detail", sender: self)
+    }
+    
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -117,14 +156,21 @@ class MealsViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if (segue.destinationViewController is MealDetailViewController) {
+        var mealVC = segue.destinationViewController as MealDetailViewController
+        var indexPath = self.tableView.indexPathForSelectedRow()
+        var row = indexPath!.row
+        mealVC.setMeal(self.meals[row])
+        }
+        else if(segue.destinationViewController is PostMyMealViewController) {
+            
+        }
     }
-    */
+
 
 }

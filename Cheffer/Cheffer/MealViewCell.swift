@@ -11,6 +11,8 @@ import UIKit
 class MealViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet var thumb : UIImageView!
+    @IBOutlet weak var subtitle: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +26,9 @@ class MealViewCell: UITableViewCell {
     }
     
     func setMeal(meal: Meal) {
-        label.text = meal.label
-    }
+       // NSLog("Call stack \(NSThread.callStackSymbols())")
+        label.text = ""
+        label.text = meal.name
+            }
 
 }

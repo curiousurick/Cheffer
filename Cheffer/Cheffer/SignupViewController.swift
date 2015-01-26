@@ -1,29 +1,25 @@
 //
-//  LoginViewController.swift
+//  SignupViewController.swift
 //  Cheffer
 //
-//  Created by George Urick on 1/24/15.
+//  Created by George Urick on 1/25/15.
 //  Copyright (c) 2015 ChefferCo. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignupViewController: UIViewController {
 
-    @IBAction func RegisterButtonClicked(sender: AnyObject) {
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func unwindToLoginSegue (segue : UIStoryboardSegue) {}
     
 
     /*
