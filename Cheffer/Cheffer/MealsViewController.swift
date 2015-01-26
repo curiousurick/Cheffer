@@ -18,6 +18,56 @@ class MealsViewController: UITableViewController, UITableViewDelegate {
     }
     
 
+    func loadMeals() {
+        
+        var query = PFQuery(className:"Meals3")
+        // query.whereKey("cuisine", equalTo:"Indian")
+        query.includeKey("chef")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("Successfully retrieved \(objects.count) meals.")
+                // Do something with the found objects
+                
+                //self.meals = objects
+                
+                for object in objects {
+                    var name = object["name"] as String
+                    var cuisine = object["cuisine"] as String
+                    var chefObject = object["chef"] as PFObject
+                    
+                    var readyTime = object["readyTime"] as NSDate
+                    var pickupTime = object["pickupTime"] as NSDate
+                    var orderByTime = object["orderByTime"] as NSDate
+                    
+                    var price = object["price"] as NSNumber
+                    var availableMeals = object["availableMeals"] as Int
+                    
+                    var firstName = chefObject["firstName"] as String
+                    var lastName = chefObject["lastName"] as String
+                    var firstLine = chefObject["firstLine"] as String
+                    var secondLine = chefObject["secondLine"] as String
+                    var city = chefObject["city"] as String
+                    var state = chefObject["state"] as String
+                    var zip = chefObject["zip"] as Int
+                    var phoneNumber = chefObject["phoneNumber"] as Int
+                    var chef = Chef(firstName: firstName, lastName: lastName, firstLine: firstLine, secondLine: secondLine, city: city, state: state, zip: zip, phoneNumber: phoneNumber)
+                    
+                    var meal = Meal(cuisine: cuisine, name: name, chef: chef, readyTime: readyTime, pickupTime: pickupTime, orderByTime: orderByTime, price: price, availableMeals: availableMeals)
+                    self.meals.append(meal)
+                    
+                    NSLog("%@", object.objectId)
+                }
+                self.tableView.reloadData()
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+    }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 242/255, green: 121/255, blue: 129/255, alpha: 1)]
@@ -27,7 +77,8 @@ class MealsViewController: UITableViewController, UITableViewDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        
+        loadMeals()
+        /*
         var query = PFQuery(className:"Meals3")
        // query.whereKey("cuisine", equalTo:"Indian")
         query.includeKey("chef")
@@ -72,7 +123,7 @@ class MealsViewController: UITableViewController, UITableViewDelegate {
                 // Log details of the failure
                 NSLog("Error: %@ %@", error, error.userInfo!)
             }
-        }
+        } */
         
     }
 

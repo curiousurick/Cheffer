@@ -7,29 +7,49 @@
 //
 
 import UIKit
+import Parse
 
 class PostMyMealViewController: UIViewController {
-/*
-    @IBOutlet var mealTitle: UIText!
-    @IBOutlet var cuisineTitle: UIText!
-    @IBOutlet var orderBy: UIText!
-    @IBOutlet var readyTime: UIText!
-    @IBOutlet var pickupTime: UIText!
-    @IBOutlet var mealsLeft: UIText!
-    @IBOutlet var credits: UIText!
-    */
+
+    @IBOutlet weak var mealTitleText: UITextField!
+    @IBOutlet weak var cuisineText: UITextField!
+    //@IBOutlet var orderByText: UIText!
+    //@IBOutlet var readyTimeText: UIText!
+    //@IBOutlet var pickupTimeText: UIText!
+    //@IBOutlet var mealsLeft: UIText!
+    //@IBOutlet var credits: UIText!
+
     @IBAction func PostMealClicked(sender: AnyObject) {
-        /*
-        var cuisine = cuisineTitle.text;
-        var name = cuisineTitle.text;
-        //var chef = cuitle.text;
-        var readyTime = readyTime.text;
-        var pickupTime = pickupTime.text;
-    
-        var orderByTime = orderByTime
         
-        var meal: Meal(cuisine, name, chef, readyTime, pickupTime, orderByTime, price, availableMeals)
-        */
+        
+            var inputChef = Chef(firstName: "George", lastName: "Urick", firstLine: "1234 33rd Ave NE", secondLine: "Apt B415", city: "Seattle", state: "WA", zip: 98125, phoneNumber: 4257572278)
+            var chef = PFObject(className: "Chef")
+            chef["firstName"] = inputChef.firstName
+            chef["lastName"] = inputChef.lastName
+            chef["firstLine"] = inputChef.firstLine
+            chef["secondLine"] = inputChef.secondLine
+            chef["city"] = inputChef.city
+            chef["state"] = inputChef.state
+            chef["zip"] = inputChef.zip
+            chef["phoneNumber"] = inputChef.phoneNumber
+            
+            
+            var meal = PFObject(className: "Meals3")
+            meal["cuisine"] = self.cuisineText.text
+        
+            meal["name"] =  self.mealTitleText.text
+            
+            meal["readyTime"] = NSDate()
+            meal["pickupTime"] = NSDate()
+            meal["orderByTime"] = NSDate()
+            var price = 1.0
+            
+            meal["price"] = price
+            var availableMeals = 3
+            meal["availableMeals"] = availableMeals
+            meal["chef"] = chef
+            meal.save()
+
         
         var alert = UIAlertController(title: "Thank You!", message: "We appreciate your contribution to the community!", preferredStyle: UIAlertControllerStyle.Alert)
         
@@ -37,6 +57,8 @@ class PostMyMealViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Default,
             handler: {(alert: UIAlertAction!) in
+                var mealsViewController = self.navigationController!.viewControllers[self.navigationController!.viewControllers.count - 2] as MealsViewController
+                mealsViewController.loadMeals()
                 self.navigationController?.popViewControllerAnimated(true)
                 return
                 
